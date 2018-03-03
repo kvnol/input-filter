@@ -1,6 +1,6 @@
 # Input Filter
 
-Tiny library to filter content according input selected.
+Tiny library for filtering content based in the input value.
 
 #### TO DO
 
