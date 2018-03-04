@@ -16,19 +16,25 @@
       <option value="green">Green</option>
       <option value="blue">Blue</option>
     </select>
+    <select class="filter-select" data-js="select" disabled>
+      <option value="">Filter</option>
+      <option value="red">Red</option>
+      <option value="green">Green</option>
+      <option value="blue">Blue</option>
+    </select>
   </nav>
 
   <div class="content">
-    <div class="item red"></div>
-    <div class="item green"></div>
-    <div class="item blue"></div>
+    <div class="item red" data-filter="red"></div>
+    <div class="item green" data-filter="green"></div>
+    <div class="item blue" data-filter="blue"></div>
   </div>
 
   <script src="/dist/lib/dom.js"></script>
   <script src="/dist/main.js"></script>
 
   <script>
-    filter('[data-js="select"]', false)
+    filter('[data-js="select"]', true)
   </script>
 </body>
 </html>
