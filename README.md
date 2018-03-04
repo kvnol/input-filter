@@ -4,7 +4,7 @@ Tiny library for filtering content based in the input value.
 
 #### TO DO
 
-- [ ] Create filter for select input
+- [x] Create filter for select input
 - [ ] Create filter for text input
 
 ## Options
