@@ -16,12 +16,6 @@
       <option value="green">Green</option>
       <option value="blue">Blue</option>
     </select>
-    <select class="filter-select" data-js="select" disabled>
-      <option value="">Filter</option>
-      <option value="red">Red</option>
-      <option value="green">Green</option>
-      <option value="blue">Blue</option>
-    </select>
   </nav>
 
   <div class="content">
@@ -34,7 +28,7 @@
   <script src="/dist/main.js"></script>
 
   <script>
-    filter('[data-js="select"]', true)
+    filter('[data-js="select"]', false)
   </script>
 </body>
 </html>
