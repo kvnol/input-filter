@@ -1,0 +1,25 @@
+.content {
+  display: flex;
+  margin: 30px 0;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.item:not(:last-child) {
+  margin-right: 10px;
+}
