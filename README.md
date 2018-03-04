@@ -39,7 +39,7 @@ filter('[data-type="select"]', false);
 
 The input filter has some options:
 
-###### hasSiblings
+#### hasSiblings
 
 The `hasSiblings` is a boolean option to filter with more than one `<select>`.
 
