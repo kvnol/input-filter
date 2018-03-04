@@ -31,11 +31,11 @@
       $input.eventListener('on', 'change', function() {
         $filterItem.forEach(function(item) {
           if (onChangeValue() === '')
-            return item.classList.remove('hidden');
+            return item.style.display = 'block';
 
           if (onChangeValue() !== item.dataset.value)
-            return item.classList.add('hidden');
-          return item.classList.remove('hidden');
+            return item.style.display = 'none';
+          return item.style.display = 'block';
         });
       });
     }
