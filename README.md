@@ -60,7 +60,7 @@ filter('[data-type="select"]', hasSiblings);
 </script>
 ```
 
-#### TO DO
+## TODO
 
 - [x] Create filter for select input
 - [ ] Create filter for text input
