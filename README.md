@@ -7,7 +7,7 @@ A tiny library for filtering content based in the input value.
 - [Configuration](#configuration)
   - [Select filter](#select-filter)
 - [Options](#options)
-  - [hasSiblings](#hasSiblings)
+  - [hasSiblings](#hassiblings)
 - [TODO](#to-do)
 - [License](#license)
 
