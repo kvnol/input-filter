@@ -8,6 +8,10 @@
   height: 100px;
 }
 
+.item.hidden {
+  display: none;
+}
+
 .red {
   background-color: red;
 }

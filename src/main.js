@@ -7,13 +7,12 @@
 
     function onChangeValue() {
       if (hasSiblings === true) {
-        $input.forEach(function(item) {
-          var value = item.options;
+        $input.forEach(function(item, index) {
+          var value = $input.get()[index].options[$input.get()[index].selectedIndex].value;
         });
-        return disableSiblings();
       }
 
-      var value = this.options;
+      var value = $input.get()[0].options[$input.get()[0].selectedIndex].value;
       return value;
     }
 
@@ -28,8 +27,21 @@
     }
 
     function hiddenContent() {
+      var $filterItem = new DOM('[data-type="filter-item"]');
+      $input.eventListener('on', 'change', function() {
+        $filterItem.forEach(function(item) {
+          if (onChangeValue() === '')
+            return item.classList.remove('hidden');
 
+          if (onChangeValue() !== item.dataset.value)
+            return item.classList.add('hidden');
+          return item.classList.remove('hidden');
+        });
+      });
     }
+
+    disableSiblings();
+    hiddenContent();
   }
 
   window.filter = filter;
