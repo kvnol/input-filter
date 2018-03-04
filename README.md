@@ -35,6 +35,8 @@ filter('[data-type="select"]', false);
 </script>
 ```
 
+#### [View the example here](https://kvnol.github.io/input-filter/examples/select/)
+
 ## Options
 
 The input filter has some options:
