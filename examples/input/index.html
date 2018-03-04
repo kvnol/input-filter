@@ -10,15 +10,20 @@
 </head>
 <body>
   <nav class="filter">
-    <input type="text" class="filter-input" data-js="input">
+    <input type="text" class="filter-input" data-type="input">
   </nav>
 
   <div class="content">
-    <div class="item red"></div>
-    <div class="item green"></div>
-    <div class="item blue"></div>
+    <div class="item red" data-type="filter-item" data-value="red"></div>
+    <div class="item green" data-type="filter-item" data-value="green"></div>
+    <div class="item blue" data-type="filter-item" data-value="blue"></div>
   </div>
 
-  <script src="/dist/main.js"></script>
+  <script src="https://rawgit.com/kvnol/input-filter/master/dist/lib/dom.js"></script>
+  <script src="https://rawgit.com/kvnol/input-filter/master/dist/main.js"></script>
+
+  <script>
+    filter('[data-type="input"]', false);
+  </script>
 </body>
 </html>

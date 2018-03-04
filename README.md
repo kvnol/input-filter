@@ -2,6 +2,15 @@
 
 A tiny library for filtering content based in the input value.
 
+## Sumary
+
+- [Configuration](#configuration)
+  - [Select filter](#select-filter)
+- [Options](#options)
+  - [hasSiblings](#hasSiblings)
+- [TODO](#to-do)
+- [License](#license)
+
 ## Configuration
 
 ### Select filter
