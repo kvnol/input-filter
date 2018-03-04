@@ -1,6 +1,6 @@
 {
   "name": "inputfilter",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Tiny library for filtering content based in the input value.",
   "main": "gulpfile.js",
   "directories": {
