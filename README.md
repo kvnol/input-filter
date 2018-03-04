@@ -1,14 +1,59 @@
 # Input Filter
 
-Tiny library for filtering content based in the input value.
+A tiny library for filtering content based in the input value.
+
+## Configuration
+
+### Select filter
+
+Configure the select filter using `[data-type="select"]` on the `<select>` tag:
+
+```html
+<select class="filter-select" data-type="select">
+  <option value="">Filter</option>
+  <option value="red">Red</option>
+  <option value="green">Green</option>
+  <option value="blue">Blue</option>
+</select>
+```
+
+And the items that will be filtered with `data-type="filter-item"` and `data-value=""`:
+
+```html
+<div class="content">
+  <div class="item red" data-type="filter-item" data-value="red"></div>
+  <div class="item green" data-type="filter-item" data-value="green"></div>
+  <div class="item blue" data-type="filter-item" data-value="blue"></div>
+</div>
+```
+
+Initialize the filter call the `filter` function:
+
+```javascript
+<script>
+filter('[data-type="select"]', false);
+</script>
+```
+
+## Options
+
+The input filter has some options:
+
+###### hasSiblings
+
+The `hasSiblings` is a boolean option to filter with more than one `<select>`.
+
+```javascript
+<script>
+filter('[data-type="select"]', hasSiblings);
+</script>
+```
 
 #### TO DO
 
 - [x] Create filter for select input
 - [ ] Create filter for text input
 - [ ] Publish on NPM
-
-## Options
 
 ## License
 
