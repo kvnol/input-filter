@@ -64,6 +64,7 @@ filter('[data-type="select"]', hasSiblings);
 
 - [x] Create filter for select input
 - [ ] Create filter for text input
+- [ ] Remove libDOM dependency
 - [ ] Publish on NPM
 
 ## License
