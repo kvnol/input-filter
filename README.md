@@ -44,7 +44,7 @@ filter('[data-type="select"]', false);
 </script>
 ```
 
-#### [View the example here](https://kvnol.github.io/input-filter/examples/select/)
+#### [View the example here](https://codepen.io/kvnol/pen/vdqYYE)
 
 ## Options
 
